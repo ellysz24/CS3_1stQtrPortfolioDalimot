@@ -15,21 +15,21 @@
 
     <div> Service Charge:
     <br>
-    <input id="inp_serv_char">
+    <input id="inp_sc">
     </div>
 
     <br>
     <button onclick="totalMeal()">Accept Input</button>
-
+    <p id="result"></p>
     <script>
         function totalMeal() {
-            const mealPrice = parseFloat(document.getElementById("inp_mp").value) || 0;
-            const tipAmount = parseFloat(document.getElementById("inp_tip").value) || 0;
-            const serviceCharge = parseFloat(document.getElementById("inp_serv_char").value) || 0;
+            const mp = parseFloat(document.getElementById("inp_mp").value) || 0;
+            const tip = parseFloat(document.getElementById("inp_tip").value) || 0;
+            const sc = parseFloat(document.getElementById("inp_sc").value) || 0;
 
-            const total = mealPrice + tipAmount + serviceCharge;
+            const total = mp + tip + ((sc/100) * mp);
 
-            alert("Total Meal: " + total.toFixed(2));
+            document.getElementById("result").textContent = "Total Meal: " + total.toFixed(2);
         }
     </script>
 
