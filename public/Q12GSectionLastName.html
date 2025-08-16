@@ -1,32 +1,37 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <h2> Q1 2nd Graded Exercise submitted by Ellysz Dalimot of 9 - Potassium</h2>
+<body style="background-color: pink;">
+    <h2> Q1 2nd Graded Exercise submitted by Ellysz Dalimot of 9 - Potassium</h2>
 
-    </head>
-      <body style="background-color: pink;">
-       <div> Meal Price:
-        <br />
-        <input id="inp_mp">
-        <button id="btn_submit">Submit</button>
+    <div> Meal Price:
+    <br>
+    <input id="inp_mp">
+    </div>
 
-        </div>
-         <div> Tip:
-          <br />
-          <input id="inp_tip">
-          <button id="btn_submit">Submit</button>
+    <div> Tip:
+    <br>
+    <input id="inp_tip">
+    </div>
 
-        </div>
-        <div> Service Charge:
-          <br />
-          <input id="inp_serv_char">
-          <button id="btn_submit">Submit</button>
+    <div> Service Charge:
+    <br>
+    <input id="inp_serv_char">
+    </div>
 
-        
-    
-       </div>
-       <script type="text/javascript">
-        const btn = document.getElementById("btn_submit");
-        const mp = document.getElementById("inp_mp");
-        const tip = document.getElementById("inp_tip");
-        const serv_char = document.getElementById("inp_serv_char");
-        
+    <br>
+    <button onclick="totalMeal()">Accept Input</button>
+
+    <script>
+        function totalMeal() {
+            const mealPrice = parseFloat(document.getElementById("inp_mp").value) || 0;
+            const tipAmount = parseFloat(document.getElementById("inp_tip").value) || 0;
+            const serviceCharge = parseFloat(document.getElementById("inp_serv_char").value) || 0;
+
+            const total = mealPrice + tipAmount + serviceCharge;
+
+            alert("Total Meal: " + total.toFixed(2));
+        }
+    </script>
+
+</body>
+</html>
