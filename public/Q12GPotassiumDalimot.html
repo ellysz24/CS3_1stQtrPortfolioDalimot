@@ -20,7 +20,7 @@
 
     <br>
     <button onclick="totalMeal()">Accept Input</button>
-    <p id="result"></p>
+    <p id="output"></p>
     <script>
         function totalMeal() {
             const mp = parseFloat(document.getElementById("inp_mp").value) || 0;
@@ -29,9 +29,8 @@
 
             const total = mp + tip + ((sc/100) * mp);
 
-            document.getElementById("result").textContent = "Total Meal: " + total.toFixed(2);
+            document.getElementById("output").textContent = "Total Meal: " + total.toFixed(2);
         }
     </script>
-
 </body>
 </html>
