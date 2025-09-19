@@ -1,4 +1,5 @@
 # Q1 End of Lessons Reflection
+### by DALIMOT, Kathrin Ellysz of 9 - Potassium
 ## List and describe at least 5 topics that we discussed in class that you know very well. Each description should be at least 1 paragraph with twoto five sentences.
 1. Variable Declaration - Just like other programming languages like C++ and Python, JavaScript has  variables.  Variables are simply containers of data.  The three keywords to declare a variable is let, var and const. 
 2. Data Types - A data type is a way to describe data.  Programming languages need to have data types to to do certain functions.  These data types are strings, numbers, boolean, undefined, null and symbol. 
