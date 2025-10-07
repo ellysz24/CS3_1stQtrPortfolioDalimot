@@ -2,6 +2,7 @@
 <p id="wordDisplay"></p>
 <input type="text" id="guessInput" maxlength="1">
 <button onclick="makeGuess()">Guess</button>
+<p id="guesses">Guessed Letters: </p>
 <p id="message"></p>
 <style>
    body {
@@ -23,6 +24,7 @@
     }
 </style>
 <script>
+  let guessedLetters = [];
   let secretWord = ["e", "x", "p", "e", "n", "s", "i", "v", "e", " ", "e", "l", "l", "y", "s", "z"];
   let guessedWord = ["_", "_", "_", "_", "_", "_", "_", "_", "_", "-", "_", "_", "_", "_", "_", "_"];
   
@@ -33,32 +35,24 @@
     let guess = document.getElementById("guessInput").value.toLowerCase();
     let correct = false;
 
+    if (!guess) return;
+
+    if (guessedLetters.includes(guess)) {
+      document.getElementById("guessInput").value = "";
+      return;
+    }
+    guessedLetters.push(guess);
+    document.getElementById("guesses").textContent = guessedLetters.join(", ");
+  
     for (let i = 0; i < secretWord.length; i++) {
       if (secretWord[i] === guess) {
         guessedWord[i] = guess;
         correct = true;
       }
     }
-    function addGuess() {
-    let letter = document.getElementById("letterInput").value;
-    if (not_duplicate(letter)) {
-      guessedLetters.push(letter);
-      document.getElementById("guesses").textContent = guessedLetters.join(", ");
-      document.getElementById("letterInput").value = "";
-    }
-  }
-
-  function not_duplicate(letter) {
-  for(let i = 0; i < guessedLetters.length; i++) {
-   if (guessedLetters[i] === letter) {
-    return false;
-  }
-}
-return true;
-}
-  }
-
+   
     document.getElementById("wordDisplay").textContent = guessedWord.join(" ");
     document.getElementById("message").textContent = correct ? "✅ Correct!" : "❌ Try again.";
     document.getElementById("guessInput").value = "";
+  }
 </script>

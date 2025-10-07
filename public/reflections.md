@@ -1,0 +1,18 @@
+# Q1 End of Lessons Reflection
+### by DALIMOT, Kathrin Ellysz of 9 - Potassium
+## List and describe at least 5 topics that we discussed in class that you know very well. Each description should be at least 1 paragraph with twoto five sentences.
+1. Variable Declaration - Just like other programming languages like C++ and Python, JavaScript has  variables.  Variables are simply containers of data.  The three keywords to declare a variable is let, var and const. 
+2. Data Types - A data type is a way to describe data.  Programming languages need to have data types to to do certain functions.  These data types are strings, numbers, boolean, undefined, null and symbol. 
+3. Javascript Operators - There are multiple types of operators like arithmetic, comparison, logical and assignment operators.  Arithmetic operators are used to do simple mathematical operations and comparison operators are used to compare two values.  Logical operators are used with codes that need conditions and assignment operators can assign the value of a variable to another one.  This was easy for me to understand because of the foundation I got from C++.
+4. Javascript Conditional Statements (if.. else, switch) - Conditional statements such as if.. else and switch executes a code depending on a condition. If-else statement checks a condition and runs different blocks of code depending if the input is true or false.  The switch statement is used when there are many specific cases to check an input for.  
+5. Javascript Loop Structures (while, do while, for) - While loop checks if a condition is true then repeatedly executes a block of code until it becomes false.  However, do while loop executes the code once then checks if the condition is true.  A for loop executes a block of code for a specific amount of times.  
+## List at least 5 topics that you know and can describe but needs further practice/discussion and why. The why should be per topic listed. 
+1. Arrays - Ever since Grade 8, I already found this topic harder than the others. It was also because of the lack of time to discuss this in the quarter.
+2. Arrow Functions - There was a lack of time to discuss because of the suspension.  I
+3. Anonymous Functions - There as a lack of time to discuss because of the suspension
+4. Nested Loop - Ever since Grade 8, I already found this topic harder than the others.  I already get the concept but I just need more practice.
+5. Event Handlers - There was a lack of time and wasn't thoroughly discussed. 
+## Describe on what will be your plan of action in order to help yourself in understanding further the topics listed on the second items.
+After the periodical exams, I will understand the topics by watching videos discussing these concepts.  I'll also practice more with coding problems I find on the Internet.  I'll go to consultation as well when I need to.
+## In the activities that were done in class, list at least two that you think were effective and at least two that you think not effective in helping you understand topics in our course and why?
+The coding exercises that were done in class and practicing using CodeChef was effective in helping me understand topics.  This is because learning the process of how to code in JavaScript hands-on is much more effective for me than reading something.  The reading of the learning guides we had to do and the diagnostic exam didn't help me understand topics.  This is because I prefer hands-on learning. 
