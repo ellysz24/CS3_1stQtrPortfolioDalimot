@@ -2,9 +2,102 @@
 <html>
 <head>
   <title>First Graded Exercise!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: #3a2c33;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .bg-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+     .corner-img {
+      position: fixed;
+      bottom: 30px; /* distance from bottom */
+      right: 30px;  /* distance from right */
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #b35d8d;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      z-index: -1;
+      transition: transform 0.3s ease;
+    }
+
+    .corner-img:hover {
+      transform: scale(1.05);
+    }
+
+
+    .card {
+      background-color: rgba(255, 240, 245, 0.95); /* light pinkish-white */
+      border-radius: 25px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+      width: 380px;
+      padding: 40px 35px;
+      text-align: center;
+      backdrop-filter: blur(8px);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    .card h1 {
+      color: #b35d8d;
+      font-size: 26px;
+      margin-bottom: 25px;
+      text-shadow: 1px 1px #f5cadd;
+    }
+
+    .card p {
+      font-size: 17px;
+      color: #4a3b42;
+      margin: 10px 0;
+      text-align: left;
+    }
+
+    .card span {
+      font-weight: bold;
+      color: #b35d8d;
+    }
+  </style>
 </head>
-<body style="background-color: pink;">
-<script>
-  document.write("Hi, my name's Kathrin Ellysz Dalimot but you can call me Ellysz!");
+
+<body>
   
-</script>
+  <img src="hearts.jpg" class="bg-image">
+
+  <div class="card">
+    <figure>
+     
+    </figure>
+  <div class ="info"></div>
+    <h1>✧˖° About Me ⋆.𐙚 ̊</h1>
+    <p><span>Name:</span> Kathrin Ellysz Dalimot</p>
+    <p><span>Nickname:</span> Ellysz</p>
+    <p><span>Age:</span> 13</p>
+    <p><span>Birthday:</span>November 24, 2011</p>
+    <p><span>Interests: </span> Books, manhwas, badminton, swimming, video games, music </span> </p>
+  </div>
+
+  <img src="cat1.jpg" class="corner-img">
+</body>
+</html>
